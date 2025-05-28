@@ -1,0 +1,93 @@
+:root {
+  --font: 'BROmega-Black';
+}
+
+@font-face {
+  font-family: "BROmega-Black";
+  src: url("../font/BROmega-Bold-BF6556cee4cf0f3.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #cc7248;
+  font-family: var(--font);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.username {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#hashtag {
+  position: relative;
+  padding-bottom: 20px;
+  color: white;
+  font-size: 1rem;
+  display: block;
+  font-family: var(--font);
+  width: 100%;
+  text-align: center;
+}
+
+.link-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  color:white;
+}
+
+.links-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+a {
+  color: white;
+}
